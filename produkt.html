@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#12382B">
+  <title>Rossoneri Arkiv 06/07 — KitCulture</title>
+  <meta name="description" content="Tilpas navn, nummer og badge på en trøje fra KitCultures arkiv. Trykket monteres i Herning.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Oswald:wght@400;500;600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="product">
+<a class="skip" href="#indhold">Spring til indhold</a>
+<div class="topbar">
+  <p><span>Fri fragt over 899 kr</span><span class="mid">Tryk monteres i Herning</span><a href="tryk.html">Send din egen trøje</a></p>
+</div>
+<header class="nav-wrap">
+  <nav class="nav" aria-label="Primær">
+    <a class="logo" href="index.html" aria-label="KitCulture forside"><span class="logo-mark" aria-hidden="true"></span><span>KitCulture</span></a>
+    <div class="nav-links">
+      <a href="shop.html" data-nav="shop">Shop</a>
+      <a href="tryk.html" data-nav="tryk">Tryk</a>
+      <a href="journal.html" data-nav="journal">Journal</a>
+      <a href="om.html" data-nav="about">Om os</a>
+    </div>
+    <div class="nav-actions">
+      <button class="icon-btn" type="button" data-open="search" aria-label="Søg"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16.5 20 20.5"/></svg></button>
+      <button class="icon-btn" type="button" data-open="cart" aria-label="Kurv"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M6.5 8h11l-.8 11.2a1 1 0 0 1-1 .8H8.3a1 1 0 0 1-1-.8L6.5 8Z"/><path d="M9 8V7a3 3 0 0 1 6 0v1"/></svg><span class="bag-count" data-cart-count>0</span></button>
+      <a class="btn btn-lime nav-cta" href="shop.html">Shop</a>
+      <button class="icon-btn nav-burger" type="button" data-open="menu" aria-label="Åbn menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg></button>
+    </div>
+  </nav>
+</header>
+
+<main id="indhold" class="wrap">
+  <p class="crumbs"><a href="index.html">Forside</a><span>/</span><a href="shop.html">Shop</a><span>/</span><span id="crumb-name">Rossoneri Arkiv 06/07</span></p>
+  <div class="pdp">
+    <div class="pdp-info">
+      <p class="kicker pdp-kicker" id="p-kicker">Serie A · Hjemmebane · 2006/07</p>
+      <h1 id="p-title">Rossoneri Arkiv 06/07</h1>
+      <p class="pdp-price" id="p-base">1.149 kr</p>
+      <p id="p-stock" hidden></p>
+      <p class="lede" id="p-story" style="margin-top:12px">Hjemmebanens striber fra den sæson, hvor San Siro sjældent blev stille.</p>
+    </div>
+    <div class="pdp-gallery">
+      <div class="stage" id="stage">
+        <img id="p-front" src="assets/jersey-back-rossoneri.jpg" width="864" height="1152" alt="Bagside af Rossoneri Arkiv, klar til spillertryk">
+        <div class="print-layer" id="p-print" aria-hidden="true">
+          <span class="print-badge"></span>
+          <span class="print-name">Kaká</span>
+          <span class="print-num">22</span>
+        </div>
+      </div>
+      <div class="thumbs" id="thumbs">
+        <button class="thumb" type="button" data-view="front" aria-pressed="false" aria-label="Vis forsiden"><img id="thumb-front" src="assets/jersey-rossoneri.jpg" alt=""></button>
+        <button class="thumb" type="button" data-view="back" aria-pressed="true" aria-label="Vis tryk på ryggen"><img id="thumb-back" src="assets/jersey-back-rossoneri.jpg" alt=""></button>
+      </div>
+    </div>
+    <form class="pdp-buy" id="buy-form">
+      <div class="size-row">
+        <p class="label" style="margin-top:0">Størrelse</p>
+        <button class="texty" type="button" data-open="size">Størrelsesguide</button>
+      </div>
+      <div class="sizes" id="sizes" role="radiogroup" aria-label="Størrelse">
+        <button class="size" type="button" role="radio" data-size="S" aria-checked="false">S</button>
+        <button class="size" type="button" role="radio" data-size="M" aria-checked="false">M</button>
+        <button class="size" type="button" role="radio" data-size="L" aria-checked="false">L</button>
+        <button class="size" type="button" role="radio" data-size="XL" aria-checked="false">XL</button>
+        <button class="size" type="button" role="radio" data-size="XXL" aria-checked="false">XXL</button>
+      </div>
+      <p class="hint" id="size-msg" hidden>Vælg en størrelse, før den ryger i kurven.</p>
+
+      <p class="label">Personalisering</p>
+      <label class="toggle">
+        <input type="checkbox" id="print-on" checked>
+        <span>Spillertryk</span>
+        <em>+ 149 kr</em>
+      </label>
+      <div class="form-grid two" style="margin-top:12px">
+        <label class="field"><span>Navn på ryggen</span><input id="p-name" maxlength="12" autocomplete="off" value="Kaká"></label>
+        <label class="field"><span>Nummer</span><input id="p-num" inputmode="numeric" maxlength="2" autocomplete="off" value="22"></label>
+      </div>
+      <p class="hint" id="print-msg" hidden>Skriv både navn og nummer, eller slå trykket fra.</p>
+      <div class="suggest" id="suggestions" style="margin-top:12px"></div>
+
+      <p class="label">Badge</p>
+      <div class="badge-opts" id="badge-opts">
+        <button class="badge-opt" type="button" data-badge="none" aria-checked="true"><strong>Ingen</strong><span>Kun navn og nummer</span></button>
+        <button class="badge-opt" type="button" data-badge="liga" aria-checked="false"><strong>Liga</strong><span>+ 79 kr</span></button>
+        <button class="badge-opt" type="button" data-badge="captain" aria-checked="false"><strong>Kaptajn</strong><span>+ 49 kr</span></button>
+      </div>
+
+      <div class="price-box" id="price-rows"></div>
+      <button class="btn btn-lime btn-block" style="margin-top:16px" type="submit">Læg i kurv</button>
+      <p class="fine">Forhåndsvisningen er vejledende. I atelieret sættes trykket i sæsonens mål. Et liga-badge vises over navnet her — på mange trøjer sidder det på ærmet.</p>
+      <ul class="trust-list">
+        <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8.2 6.2 11.5 13 4.5" stroke="#12382b" stroke-width="1.6" stroke-linecap="round"/></svg> Monteres i Herning</li>
+        <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8.2 6.2 11.5 13 4.5" stroke="#12382b" stroke-width="1.6" stroke-linecap="round"/></svg> 14 dages retur på utrukne trøjer</li>
+        <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8.2 6.2 11.5 13 4.5" stroke="#12382b" stroke-width="1.6" stroke-linecap="round"/></svg> Tryk laves til dig og tages kun retur, hvis vi har lavet en fejl</li>
+      </ul>
+    </form>
+  </div>
+
+  <div class="details">
+    <div class="acc">
+      <button class="acc-btn" type="button" aria-expanded="true">Pasform og stof</button>
+      <div class="acc-panel">
+        <p id="p-fabric">100% polyester, let retrofit med guldkrave.</p>
+        <p>Arkivsnit sidder tættere end en moderne spillertrøje. Vask vrangen ud ved 30 grader, og lad være med at stryge direkte på trykket.</p>
+      </div>
+    </div>
+    <div class="acc">
+      <button class="acc-btn" type="button" aria-expanded="false">Trykket</button>
+      <div class="acc-panel" hidden>
+        <p>Navn og nummer varmes på i sæsonens skrifttype og farve. Du kan også sende din egen trøje ind og få det samme gjort.</p>
+        <p><a class="text-link" href="tryk.html">Læs om trykservice</a></p>
+      </div>
+    </div>
+    <div class="acc">
+      <button class="acc-btn" type="button" aria-expanded="false">Levering</button>
+      <div class="acc-panel" hidden>
+        <p>2–4 hverdage i Danmark. Et tryk lægger 1–2 dage oveni. Fri fragt over 899 kr, ellers 49 kr.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="related">
+    <h2>Andre sæsoner.</h2>
+    <div class="grid" id="related"></div>
+  </div>
+</main>
+
+<div class="buybar">
+  <div>
+    <strong id="bar-price">1.298 kr</strong>
+    <span id="bar-meta">Vælg størrelse · Kaká 22</span>
+  </div>
+  <button class="btn btn-lime" type="button" id="bar-add">Læg i kurv</button>
+</div>
+
+<footer class="footer">
+  <div class="wrap footer-top">
+    <div>
+      <p class="footer-brand">KitCulture</p>
+      <p>Atelier for fodboldtrøjer, retro og spillertryk. Herning.</p>
+    </div>
+    <div class="col">
+      <h3>Shop</h3>
+      <a href="shop.html">Hele arkivet</a>
+      <a href="shop.html?liga=serie-a">Serie A</a>
+      <a href="shop.html?liga=la-liga">La Liga</a>
+      <a href="shop.html?liga=premier-league">Premier League</a>
+      <a href="shop.html?liga=landshold">Landshold</a>
+    </div>
+    <div class="col">
+      <h3>Atelier</h3>
+      <a href="tryk.html">Trykservice</a>
+      <a href="tryk.html#send">Send din trøje</a>
+      <a href="journal.html">Journal</a>
+      <a href="om.html#fragt">Fragt og retur</a>
+    </div>
+    <div class="col">
+      <h3>Huset</h3>
+      <a href="om.html">Om os</a>
+      <a href="om.html#vilkar">Vilkår</a>
+      <a href="kurv.html">Kurv</a>
+      <a href="mailto:hej@kitculture.dk">hej@kitculture.dk</a>
+    </div>
+  </div>
+  <div class="wrap footer-giant" aria-hidden="true">KitCulture</div>
+  <div class="wrap footer-base">
+    <span>© 2026 KitCulture</span>
+    <span>Mockup · ikke en rigtig webshop</span>
+  </div>
+</footer>
+<script src="js/products.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>

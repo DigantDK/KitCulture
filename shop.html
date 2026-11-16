@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#12382B">
+  <title>Arkivet — KitCulture</title>
+  <meta name="description" content="Shop fodboldtrøjer og retro fra KitCulture. Alle kan få sæsonkorrekt spillertryk, før de sendes fra Herning.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Oswald:wght@400;500;600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="shop">
+<a class="skip" href="#indhold">Spring til indhold</a>
+<div class="topbar"><p><span>Fri fragt over 899 kr</span><span class="mid">Tryk monteres i Herning</span><a href="tryk.html">Send din egen trøje</a></p></div>
+<header class="nav-wrap">
+  <nav class="nav" aria-label="Primær">
+    <a class="logo" href="index.html" aria-label="KitCulture forside"><span class="logo-mark" aria-hidden="true"></span><span>KitCulture</span></a>
+    <div class="nav-links">
+      <a href="shop.html" data-nav="shop">Shop</a>
+      <a href="tryk.html" data-nav="tryk">Tryk</a>
+      <a href="journal.html" data-nav="journal">Journal</a>
+      <a href="om.html" data-nav="about">Om os</a>
+    </div>
+    <div class="nav-actions">
+      <button class="icon-btn" type="button" data-open="search" aria-label="Søg"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16.5 20 20.5"/></svg></button>
+      <button class="icon-btn" type="button" data-open="cart" aria-label="Kurv"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M6.5 8h11l-.8 11.2a1 1 0 0 1-1 .8H8.3a1 1 0 0 1-1-.8L6.5 8Z"/><path d="M9 8V7a3 3 0 0 1 6 0v1"/></svg><span class="bag-count" data-cart-count>0</span></button>
+      <a class="btn btn-lime nav-cta" href="shop.html">Shop</a>
+      <button class="icon-btn nav-burger" type="button" data-open="menu" aria-label="Åbn menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg></button>
+    </div>
+  </nav>
+</header>
+<main id="indhold" class="wrap" style="padding-bottom:72px">
+  <div class="page-intro">
+    <p class="kicker">Shop</p>
+    <h1>Arkivet.</h1>
+    <p class="lede">Trøjer fra sæsoner, folk stadig taler om. Alle kan få spillertryk, før de sendes fra Herning.</p>
+  </div>
+  <div class="shop-tools">
+    <div class="filters" id="filters" role="group" aria-label="Filtrér liga"></div>
+    <label class="sort">Sortér
+      <select id="sort" aria-label="Sortér">
+        <option value="anbefalet">Anbefalet</option>
+        <option value="pris-lav">Pris, lav–høj</option>
+        <option value="pris-hoj">Pris, høj–lav</option>
+        <option value="saeson">Sæson, nyeste</option>
+      </select>
+    </label>
+  </div>
+  <div class="grid shop-grid" id="shop-grid"></div>
+  <p class="empty-note" id="shop-empty" hidden>Ingen trøjer i det hjørne af arkivet.</p>
+</main>
+<footer class="footer">
+  <div class="wrap footer-top">
+    <div><p class="footer-brand">KitCulture</p><p>Atelier for fodboldtrøjer, retro og spillertryk. Herning.</p></div>
+    <div class="col"><h3>Shop</h3><a href="shop.html">Hele arkivet</a><a href="shop.html?liga=serie-a">Serie A</a><a href="shop.html?liga=la-liga">La Liga</a><a href="shop.html?liga=premier-league">Premier League</a><a href="shop.html?liga=landshold">Landshold</a></div>
+    <div class="col"><h3>Atelier</h3><a href="tryk.html">Trykservice</a><a href="tryk.html#send">Send din trøje</a><a href="journal.html">Journal</a><a href="om.html#fragt">Fragt og retur</a></div>
+    <div class="col"><h3>Huset</h3><a href="om.html">Om os</a><a href="om.html#vilkar">Vilkår</a><a href="kurv.html">Kurv</a><a href="mailto:hej@kitculture.dk">hej@kitculture.dk</a></div>
+  </div>
+  <div class="wrap footer-giant" aria-hidden="true">KitCulture</div>
+  <div class="wrap footer-base"><span>© 2026 KitCulture</span><span>Mockup · ikke en rigtig webshop</span></div>
+</footer>
+<script src="js/products.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>
